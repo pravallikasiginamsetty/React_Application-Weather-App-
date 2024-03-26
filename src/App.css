@@ -1,0 +1,101 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('/Users/prava/Desktop/simple-weather-app/src/bgimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* App container */
+.App {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust background color and opacity */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 80%; /* Adjust maximum width */
+  display: flex; /* Add flexbox layout */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center align children horizontally */
+}
+h1 {
+  font-size: 32px; /* Adjust font size */
+  font-weight: bold; /* Make the font bold */
+  color: #3d4144; /* Change the color */
+  margin-bottom: 20px; /* Add some space below the heading */
+  text-transform: uppercase; /* Convert text to uppercase */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a text shadow */
+}
+/* Location input form */
+form {
+  margin-top: 20px;
+  display: flex; /* Display children in a row */
+  flex-direction: column; /* Arrange children in a column */
+  align-items: center; /* Center align children horizontally */
+
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Weather container */
+.weather {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px; /* Add margin to the right side */
+  width: 50%; /* Adjust width */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+}
+/* Forecast container */
+.forecast {
+  display: flex; /* Add flexbox layout */
+  justify-content: space-around; /* Distribute items with space around */
+  width: 80%; /* Adjust width */
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.forecast-item {
+  padding: 10px; /* Add padding */
+  border-radius: 10px; /* Add border radius */
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  margin-right: 10px; /* Add margin to the right side */
+}
+
+/* Error message */
+.error {
+  color: red;
+}
