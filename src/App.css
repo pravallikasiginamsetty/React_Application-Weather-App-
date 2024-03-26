@@ -6,7 +6,7 @@ html, body {
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('/Users/prava/Desktop/simple-weather-app/src/bgimg.jpg');
+  background-image: url('/Users/prava/Desktop/React_Application-Weather-App-/src/bgimg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -20,28 +20,28 @@ body {
 .App {
   text-align: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.5); /* Adjust background color and opacity */
+  background-color: rgba(255, 255, 255, 0.5); 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  max-width: 80%; /* Adjust maximum width */
-  display: flex; /* Add flexbox layout */
-  flex-direction: column; /* Arrange children in a column */
-  align-items: center; /* Center align children horizontally */
+  max-width: 80%; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 }
 h1 {
-  font-size: 32px; /* Adjust font size */
-  font-weight: bold; /* Make the font bold */
-  color: #3d4144; /* Change the color */
-  margin-bottom: 20px; /* Add some space below the heading */
-  text-transform: uppercase; /* Convert text to uppercase */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a text shadow */
+  font-size: 32px; 
+  font-weight: bold; 
+  color: #3d4144; 
+  margin-bottom: 20px; 
+  text-transform: uppercase; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 /* Location input form */
 form {
   margin-top: 20px;
-  display: flex; /* Display children in a row */
-  flex-direction: column; /* Arrange children in a column */
-  align-items: center; /* Center align children horizontally */
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 
 }
 
@@ -72,27 +72,27 @@ button:hover {
 .weather {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: 10px; /* Add margin to the right side */
-  width: 50%; /* Adjust width */
-  padding: 20px; /* Add padding */
-  border-radius: 10px; /* Add border radius */
-  background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  margin-right: 10px; 
+  width: 50%; 
+  padding: 20px; 
+  border-radius: 10px; 
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 /* Forecast container */
 .forecast {
-  display: flex; /* Add flexbox layout */
-  justify-content: space-around; /* Distribute items with space around */
-  width: 80%; /* Adjust width */
+  display: flex; 
+  justify-content: space-around; 
+  width: 80%; 
   margin-bottom: 20px;
   margin-left: 10px;
 }
 .forecast-item {
-  padding: 10px; /* Add padding */
-  border-radius: 10px; /* Add border radius */
-  background-color: rgba(255, 255, 255, 0.8); /* Adjust background color and opacity */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
-  margin-right: 10px; /* Add margin to the right side */
+  padding: 10px;
+  border-radius: 10px; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-right: 10px; 
 }
 
 /* Error message */

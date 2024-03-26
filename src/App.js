@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API_KEY = '5afeb731819e8eb92000bd907c4ef2e7'; // Replace 'your_api_key' with your OpenWeatherMap API key
+const API_KEY = '5afeb731819e8eb92000bd907c4ef2e7'; 
 
 const Weather = ({ data }) => {
   return (
     <div className="weather">
-      <h2>Current Weather</h2> {/* Added heading for current weather */}
+      <h2>Current Weather</h2> 
       <p>Location: {data.name}, {data.sys.country}</p>
       <p>Temperature: {data.main.temp} °C</p>
       <p>Humidity: {data.main.humidity}%</p>
@@ -41,7 +41,7 @@ const LocationInput = ({ onSubmit }) => {
 
 const App = () => {
   const [weatherData, setWeatherData] = useState(null);
-  const [forecastData, setForecastData] = useState(null); // Define setForecastData here
+  const [forecastData, setForecastData] = useState(null);
   const [error, setError] = useState(null);
 
   const fetchWeather = async (location) => {
@@ -59,7 +59,7 @@ const App = () => {
   };
 
   const Forecast = ({ forecastData }) => {
-    // Filter forecast data to include only the next 5 days
+  
     const filteredForecast = forecastData.list.filter((forecast, index) => index % 8 === 0).slice(0, 5);
   
     return (
@@ -70,7 +70,7 @@ const App = () => {
             <p>Date: {forecast.dt_txt}</p>
             <p>Temperature: {forecast.main.temp} °C</p>
             <p>Humidity: {forecast.main.humidity}%</p>
-            {/* Add additional forecast details as needed */}
+       
           </div>
         ))}
       </div>
