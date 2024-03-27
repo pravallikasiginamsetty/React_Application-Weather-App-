@@ -6,7 +6,7 @@ html, body {
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('/Users/prava/Desktop/React_Application-Weather-App-/src/bgimg.jpg');
+  background-image:url('./bgimg.jpg');  ;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
